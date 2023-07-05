@@ -1,0 +1,36 @@
+
+input tag validation attributes:
+1.required - it will check empty validation
+2.min - for input type=number
+3.max - for input type=number
+4.minlength  - minimum character (it will not work with type="number")
+5.maxlength  - max character (it will not work with type="number")
+6.patten - we need javascript regex patten
+7.email - it will check email validation
+
+
+
+form attributes:
+1.action - to move from current page to next page once we submit the button.
+2.method 
+    1GET 
+    //Data will be attached in the url.
+    //Huge data we cannot send in the url.
+    //Data is not too much secure.
+    file:///Users/salmanahmedg/Documents/Tuto/reactjs/Batch/Reactjs-Weekday-9AM-10AM/January/14-01-23/2confirmation.html?
+    fullName=akashadf&lastName=asdf&employeeId=202223&gender=Female
+    2.POST
+    //Data will attached inside the body 
+    //Huge data we can send it 
+    //Data is more secure.
+    //Form data.
+    fullName=akash&lastName=asdfsda&employeeId=202223&gender=Female&city=madurai
+    //inspect-network-fileName
+==========================
+http is divided into two section 
+      header section - to send and receive only url
+      body section  - to send huge data.
+
+Get method will have access for header section only 
+post method will have acess for bother header and body section 
+======================================    

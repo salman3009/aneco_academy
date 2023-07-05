@@ -1,0 +1,62 @@
+Sofware needed to start with html:
+1.We need one editor
+example:
+notepad,notepad++,visual studio code(IDE)
+IDE - Integrated Development Environment.
+IDE - syntax support,intelligence support.
+//As a javascript developer always everyone prefer visual studio code.
+=============================================================
+Shortcut keys:
+to create new file: ctrl+n 
+To save a file:ctrl+s 
+to select all:ctrl+a 
+to copy a text:ctrl+c 
+to paste it:ctrl+v 
+to comment:ctrl+/ 
+to uncomment:ctrl+/
+to replace:ctrl+r 
+to find:ctrl+f 
+========================================
+html extension:.html or .htm 
+filename:credoSystem.html 
+filename:addressInfo.html 
+filename:index.html 
+filename:app.html 
+================================
+web page: one file which consists of html code
+//html consists of two sections: 
+       1.head section 
+            //head section consists of information about the current page
+       2.body section
+           //body section browser will display the content
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>World Bank</h1>
+    </body>
+</html>
+=============================================
+heading tag
+example:
+<h1></h1>
+we have till h1 to h6 
+we don't have any sequence anything can be used at anytime.
+===================================================
+To check your code in browser.
+please right click in browser and click on view page source.
+===================================================
+title tag 
+To display the information about the web page inside the tab of the browser 
+we need to use inside the head section 
+example:
+<head>
+<title>Watsapp</title>
+</head>
+===========================================
+
+
+
+
+

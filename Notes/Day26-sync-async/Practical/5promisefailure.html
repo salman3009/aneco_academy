@@ -1,0 +1,18 @@
+<script>
+    //async code
+    const getDetails=(num)=>{
+         return new Promise((success,failure)=>{
+            if(num<0){
+                failure("no data found");
+            }else{
+                success([56,77,77]);
+            }
+            
+         })
+    }
+    getDetails(-1).then((result)=>{
+         console.log(result);
+    }).catch((error)=>{
+        console.log("error",error);
+    })
+</script>

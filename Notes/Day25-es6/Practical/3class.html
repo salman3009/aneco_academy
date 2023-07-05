@@ -1,0 +1,28 @@
+<script>
+    class YouTube{
+
+        constructor(name,likes,subscribe){
+            this.name = name;
+            this.likes = likes;
+            this.subscribe = subscribe;
+        }
+
+        setSubscribe(input){
+           this.subscribe = input;
+           this.address = "chennai";
+        }
+
+        getAddress(){
+            return this.address;
+        }
+    }
+    var football = new YouTube("lokesh",222,true);
+    console.log(football);
+    var animation = new YouTube("suresh",22,false);
+    console.log(animation);
+    var cartoon = new YouTube("mary",66,true);
+    console.log(cartoon);
+    cartoon.setSubscribe(false);
+    console.log(cartoon);
+    console.log(cartoon.getAddress());
+</script>

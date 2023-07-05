@@ -1,0 +1,19 @@
+Frontend web developer:
+html 
+css 
+javascript 
+
+Frameworks:A collection of library
+css - bootstrap 4
+javascript - Reactjs
+===================================
+bootstrap 4:
+1.mobile responsive
+2.predefined components 
+components:
+1.table
+2.modal
+3.forms
+4.navbar 
+5.grid
+============================

@@ -1,0 +1,31 @@
+How to Declare variable:
+example:
+var firstName = "akash";
+//var is a predefined keyword 
+//firstName is user defined variable 
+//akash is a value 
+===========================
+primitive datatypes:
+1.string 
+2.number 
+3.boolean 
+4.undefined 
+
+Derived Datatype:
+CRUD - create,read,update,delete
+1.object
+//it will store group of data together
+//always keys should be unique 
+//order does not matter.
+var personType ={
+    details:"ddd",
+    age:"ddd"
+};
+
+2.array
+//it will store value continously.
+
+=====================
+Javascript has dynamic types:
+
+

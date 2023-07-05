@@ -1,0 +1,26 @@
+attributes in html:
+//attributes is extra information for the tag.
+//it will do additional features support
+align = "left"
+align - key 
+"left" - value 
+//value can be in single quotes or double quotes 
+//if you start in single quotes please close in single quotes 
+//align attribute will work only for text not for image tag.
+==========================================
+Image tag:
+img 
+//there is no closing tag
+attributes:
+src  - source
+alt - alternate
+width
+height 
+=============================
+entity tag:
+1.&gt; >
+2.&lt; <
+3.space &nsbp;
+4.&#8377;
+=========================
+

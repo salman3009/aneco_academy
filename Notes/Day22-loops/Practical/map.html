@@ -1,0 +1,33 @@
+<script>
+    var list=[
+        {
+            fullName:"suresh",
+            age:22
+        },{
+            fullName:"ramesh",
+            age:33
+        },
+        {
+            fullName:"rajesh",
+            age:11
+        }
+    ];
+
+    var result = list.map(function(input){
+              return {
+                 address:"chennai",
+                 fullName:input.fullName,
+                 displayAge:input.age
+              };
+    });
+    console.log(result);
+    var result = list.map(function(input){
+              return input.age;
+    });
+    console.log(result);
+
+    var result = list.map(function(input){
+              return input;
+    });
+    console.log(result);
+</script>

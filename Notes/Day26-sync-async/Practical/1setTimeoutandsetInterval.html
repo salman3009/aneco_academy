@@ -1,0 +1,22 @@
+<script>
+    //1000 milliseconds is equal to 1seconds
+    
+    // setTimeout()
+    // setTimeout(()=>{
+
+    // })
+      setTimeout(()=>{
+         console.log("This code is running");
+      },2000)
+
+      var stopIntervals = setInterval(()=>{
+         console.log("every three seconds it will run");
+      },3000);
+
+      setTimeout(()=>{
+         clearInterval(stopIntervals);
+      },10000)
+
+
+
+</script>

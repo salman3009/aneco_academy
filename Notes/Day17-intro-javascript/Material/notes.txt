@@ -1,0 +1,96 @@
+Frontend web development:
+1.HTML - layout
+2.CSS - presentation
+3.Javascript - dynamic
+
+CSS framework - bootstrap 4
+javascript framework - reactjs
+====================================
+javascript compiler is present inside the browser.
+chrome compiler - v8engine 
+firefox compiler - spider 
+===============================
+Why javascript is used?
+1.it is lightweight language
+2.it is faster 
+3.scripting language - line by line execution
+==========================
+javascript how is going to communicate with html/CSS
+1.DOM - Document object model.
+//it is divided the entire html tag tree like structure 
+//each tag is an object 
+//above the html they have attached one more object called window object.
+//inside the window object will have all the functionalities to help to interact html/css.
+===============================
+object:
+//noun - anything you can able see from your eye.
+example:
+person,table,fan,laptop,mobile,car:
+each object will have two things:
+1.properties 
+2.methods
+Example:Person 
+properties:
+height 
+weight 
+skinColor
+Methods:
+walk() 
+eat()
+run()
+
+basic:
+person = {
+    height:33,
+    weight:55,
+    skinColor:black,
+    walk(),
+    eat(),
+    run()
+};
+window ={
+    alert()
+    write()
+}
+window.alert()
+=====================================
+anything you want to run in the browser:
+//always extension should be .html 
+==========================
+how to write javascript:
+1.internal
+//writing javascript inside the html.
+<script>
+   alert("hello world")
+</script>
+2.external 
+
+=========================
+//For sentence or character that is called string 
+string can be written in single quotes '' or double quotes ""
+//if you start in double quotes end in double quotes
+//if you start in single quotes end in single quotes.
+==========================================
+window keyword is optional.
+=====================
+semicolon we need to use at the end of the statement
+=======================================
+console.log()
+//it is used to check the output for javascript for developer purpose
+==========================
+document.write()
+//it will help to write html from javascript.
+=========================
+
+
+
+
+
+
+
+
+
+
+
+
+

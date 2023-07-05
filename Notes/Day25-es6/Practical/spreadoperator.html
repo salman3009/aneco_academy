@@ -1,0 +1,33 @@
+<!-- <script>
+    var list =[1,2,3];
+    var listTwo = list;
+    listTwo.push(4);
+    console.log(list);
+    console.log(listTwo);
+</script> -->
+
+<script>
+    var list =[1,2,3];
+    var listTwo = [...list];
+    listTwo.push(4);
+    console.log(list);
+    console.log(listTwo);
+</script>
+
+<script>
+    var list =[1,2,3];
+    var listTwo = [5,6];
+    var merge = [...list,...listTwo];
+    console.log(merge);
+</script>
+
+<script>
+    var list = {
+        firstName:"akash",
+        age:22
+    }
+    var listTwo = {...list};
+     listTwo.address = "chennai"
+     console.log(list);
+     console.log(listTwo);
+</script>

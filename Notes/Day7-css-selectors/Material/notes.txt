@@ -1,0 +1,77 @@
+CSS - cascading style sheet 
+//it is for presentation purpose.
+Three ways of writing css inside the html:
+1.inline
+//Please avoid using this one
+example:
+style="color:red"
+style -> attribute 
+"" or '' -> you can use double or single quotes
+color --> is the key predefined inside the css
+:-->separation 
+red --> red
+================================================
+2.internal
+//anywhere you can write style tag but best approach is inside the head tag
+//best approach for practice and assignment project 
+ <style>
+            h1{
+                color:red;
+            }
+
+        </style>
+
+3.external
+//best approach for real time project
+global.css
+h1{
+    color:red;
+}
+external.html
+====================================
+basic selector:
+1.element 
+example:
+ <style>
+            h1{
+                color:red;
+            }
+        
+        </style>
+
+2.id 
+//it should be unqiue in entire html document
+//to access inside the css we need to use (#)symbol 
+example:
+#one{
+    color:red;
+}
+
+3.class 
+//to apply common design for all the tags 
+//to access inside the css we need to use (.)symbol
+example:
+    <style>
+        .heading{
+            color:green;
+        }
+    </style>
+
+4.universal
+//it will apply for entire html document.
+example:
+   <style>
+   *{
+    color:blue;
+   }
+   </style> 
+5.grouping
+//to apply commong design for all the selectors 
+//we have to use symbol (,)
+example:
+ <style>
+        .heading,#four,a{
+            color:green;
+        }
+    </style>
+=========================================    

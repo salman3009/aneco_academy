@@ -1,0 +1,17 @@
+Form element:
+//name property is mandatory in all the fields.
+//value property is mandatory in checkbox,radiobutton,select tag
+=====================================
+Attributes in form:
+Input tag attributes:
+1.name - it should be unique and mandatory to access the 
+data with javascript 
+2.id - it should be unique.Used to design css and also for 
+javascript access.
+3.placeholder - for information purpose
+4.readonly - you cannot able to change the value.
+5.autofocus - to focus the element
+6.disabled - you cannot able to perform any action in that particular tag.
+7.checked - default selection in radio and checkbox 
+8.selection - default selection in select tag.
+=============================================

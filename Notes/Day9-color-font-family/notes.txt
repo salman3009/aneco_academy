@@ -1,0 +1,44 @@
+Box modal:
+1.width*heigh 
+2.padding
+3.border 
+4.margin
+//margin:auto
+//it will bring in the center of page.
+//please note we have center properties to align in horizontal way not in vertical ways.
+=================================
+color properties:
+normal color 
+hexa decimal color 
+//alphanumeric value
+#673ab7;
+rgb color 
+r - red 
+g - green 
+b - blue 
+a - opacity
+0,0.1 to 1
+=============================
+background 
+//if you want to apply background image then we can use following properties:
+1.background-image:url('');
+2.background-size:cover 
+3.background-repeat:no-repeat 
+===================================
+font-size 
+//to increase the size of the text
+
+font-weight 
+//to make it in bold 
+
+font-style 
+//to change to italic form
+
+font-family 
+//font-family we can use multiple keywords with comman separator.
+//browser will take which one is supporting 
+//if you have more then one word we need enclose with single quotes or double quotes 
+//if you have only one word for font-family you can write it directly
+example
+// font-family: 'Trebuchet MS', Arial;
+===============================================            

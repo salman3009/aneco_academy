@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style>
+            *{
+                margin:0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .box{
+                width: 100%;
+                height: 200px;
+                background-color: red;
+            }
+            @media (max-width:480px){
+               .box{
+                background-color: green;
+               }
+            }
+            @media (min-width:481px) and (max-width:767px){
+                .box{
+                background-color: rgb(25, 16, 28);
+               }  
+            }
+            /*portrait mode tablet and ipad*/
+            @media (min-width:768px) and (max-width:1024px){
+                .box{
+                background-color: gold;
+               }
+            }
+            /*laptop*/
+            @media (min-width:1025px) and (max-width:1280px){
+                .box{
+                background-color: grey;
+               }
+            }
+            /*large screen*/
+            @media(min-width:1281px){
+                .box{
+                background-color: indianred;
+               }
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="box">
+
+        </div>
+    </body>
+</html>

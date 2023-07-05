@@ -1,0 +1,18 @@
+<script>
+    function cartList(input,user){
+        console.log("cart added value",input,user);
+        console.log("length of array",input.length);
+        return {amount:input.length,name:user};
+        
+    }
+    var result = cartList(["mobile","laptop","cloth"],"akash");
+    var resultOne = cartList(["laptop","suresh"],"suresh");
+    var resultTwo = cartList(["washing machine"],"prem");
+    amount(result);
+    amount(resultOne);
+    amount(resultTwo);
+    function amount(obj){
+        var result = obj.amount * 100;
+        console.log("final amount is",result,obj.name);
+    }
+</script>

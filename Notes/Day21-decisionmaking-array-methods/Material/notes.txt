@@ -1,0 +1,10 @@
+Decision making we have two things:
+1.ifelse 
+2.switch statement
+//you use number,string to check multiple scenario 
+//break keyword is mandatory to be used after every case.
+//default is optional if you need to show not matching condition you can use it.
+===================================
+//If you have single statement go with ternary operator.
+//if you have multiple statement to be written with two condtions yes or not you can use if else statement.
+============================================

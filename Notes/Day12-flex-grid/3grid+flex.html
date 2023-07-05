@@ -1,0 +1,136 @@
+<html>
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+        }
+
+        .mainbar {
+            grid-area: mainbar;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas: 'header header header'
+                'sidebar mainbar mainbar'
+                'footer footer footer';
+            gap: 50px;
+        }
+
+
+
+        .header,
+        .footer {
+            background-color: red;
+            height: 100px;
+            width: 100%;
+        }
+
+        .sidebar {
+            background-color: greenyellow;
+            min-height: 500px;
+            width: 100%;
+        }
+
+        .mainbar {
+            background-color: orange;
+            min-height: 500px;
+            width: 100%;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin: 20px;
+
+
+
+        }
+
+        .container-flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        ol {
+            width: 199px;
+            height: 100%;
+            background-color: green;
+        }
+        li{
+            list-style-type: none;
+            padding:20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="sidebar">
+            <ol>
+                <li><a href="/">Pen</a></li>
+                <li>Pencil</li>
+                <li>Sharpner</li>
+                <li>Eraser</li>
+                <li>Pen</li>
+                <li>Pen</li>
+                <li>Pen</li>
+                <li>Pen</li>
+                <li>Pen</li>
+            </ol>
+        </div>
+        <div class="mainbar">
+            <div class="container-flex">
+                <div class="box">
+                    welcome to javascript
+                    <h3>Details</h3>
+                </div>
+                <div class="box">
+                    welcome to javascript
+                </div>
+                <div class="box">
+                    welcome to javascript
+                </div>
+                <div class="box">
+                    welcome to javascript
+                </div>
+                <div class="box">
+                    welcome to javascript
+                </div>
+                <div class="box">
+                    welcome to javascript
+                </div>
+                <div class="box">
+                    welcome to javascript
+                </div>
+                <div class="box">
+                    welcome to javascript
+                </div>
+                <div class="box">
+                    welcome to javascript
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+
+</html>

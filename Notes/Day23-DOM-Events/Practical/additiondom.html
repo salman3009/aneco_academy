@@ -1,0 +1,30 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+       Input A:<input type="number" name="one" onChange="onChangeHandlerOne(event)"/>
+       Input A:<input type="number" name="two" onChange="onChangeHandlerTwo(event)"/>
+       <button onClick="onSubmit()">submit</button>
+       <div id="demo"></div>
+        <script>
+            var a=0;
+            var b=0;
+            function onChangeHandlerOne(event){
+                console.log(event.target.value);
+                a = Number(event.target.value);
+                alert("chnage");
+            }
+            function onChangeHandlerTwo(event){
+                console.log(event.target.value);
+                b = Number(event.target.value);
+                alert("chnage");
+            }
+            function onSubmit(){
+                alert("submit");
+                var result = a + b;
+                document.getElementById("demo").innerHTML = "The final value is "+result;
+            }
+        </script>
+    </body>
+</html>

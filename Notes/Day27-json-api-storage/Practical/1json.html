@@ -1,0 +1,17 @@
+<script>
+    let list=[{
+        fullName:"akash",
+        age:22
+    },{
+        fullName:"suresh",
+        age:45
+    }];
+    console.log(typeof list,list[0]);
+    //sending code from frontend to backend
+    list = JSON.stringify(list);
+    console.log(typeof list,list[0]);
+    //sending code from backend to frontend
+    list = JSON.parse(list);
+    console.log(typeof list,list[0]);
+
+</script>

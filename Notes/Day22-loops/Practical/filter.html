@@ -1,0 +1,26 @@
+<script>
+    var list=[
+        {
+            fullName:"suresh",
+            age:22
+        },{
+            fullName:"ramesh",
+            age:33
+        },
+        {
+            fullName:"rajesh",
+            age:11
+        }
+    ];
+
+    var result = list.filter(function(input){
+              return input.fullName === "rajesh";
+    });
+    console.log(result);
+
+    var result = list.filter(function(input){
+              return input.age>=18;
+    });
+    console.log(result);
+    
+</script>

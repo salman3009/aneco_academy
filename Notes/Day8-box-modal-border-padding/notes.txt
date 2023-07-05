@@ -1,0 +1,28 @@
+BOx modal:
+//Each and everyelement you will have box modal 
+//Inside box modal:
+
+1.width*height 
+example:
+width:200px;
+height:100px;
+
+2.padding
+//it will create space between content and border
+1.top 
+2.left 
+3.right 
+4.bottom
+3.border 
+example:
+padding:10px;
+
+It is divided into four position:
+1.top 
+2.left 
+3.right 
+4.bottom
+example:
+border:10px solid red;
+
+4.margin

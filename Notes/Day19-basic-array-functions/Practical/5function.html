@@ -1,0 +1,47 @@
+<script>
+    function display(){
+        console.log("hello world");
+        console.log("javascript");
+    }
+    display();
+    display();
+    display();
+</script>
+
+<script>
+    function displayAddress(city,age){
+        //parameter or argument
+        //city and age is user defined variable
+         console.log("city name is",city,age);
+    }
+    displayAddress("chennai",33);
+    displayAddress("kochi",33);
+    displayAddress("madurai",45);
+</script>
+
+<script>
+    //global scope anyone can use this one
+    function addition(a,b){
+        var result = a+b;
+        return result;
+    }
+
+    function subtraction(a,b){
+        var result = a-b;
+        return result;
+    }
+
+    function multiplication(a,b){
+        var result = a*b;
+        return result;
+    }
+
+    var totalValue = addition(3,4);
+    var totalValueSub = subtraction(3,4);
+    finalResult(totalValueSub);
+
+    function finalResult(input){
+        console.log("The total value is",input);
+    }
+</script>
+

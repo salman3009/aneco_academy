@@ -1,0 +1,28 @@
+array:
+//It is used to store the data continously inside the memory.
+//address will start from zero.
+example:
+var list = [];
+push() - it will push the value at the end position 
+pop() - it will remove the value at the end position 
+length - it will calculate total length.
+================================
+function:
+1.Doing some repetative task.
+2.it will avoid duplication of code.
+example:
+function display(){
+    console.log("hello world");
+    console.log("javascript");
+}
+=====================================
+this keyword refer to current object
+1.function/methods that is written inside the object.That will be used within
+the scope of object.
+===================================================
+Difference between normal function and function inside the object
+//normal function can be used by anyone inside the file.
+//function written inside the object will limited to that object scope.
+//normal function global scope 
+//function inside the object is local scope.
+===============================================

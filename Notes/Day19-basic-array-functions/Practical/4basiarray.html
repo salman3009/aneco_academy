@@ -1,0 +1,28 @@
+<script>
+    var list = [66,22,36,67];
+    console.log(list);
+    console.log(typeof list);
+    console.log(Array.isArray(list));
+    console.log(Array.isArray(34));
+    console.log(list[0]);
+    console.log(list[1]);
+    console.log(list[6]);
+</script>
+
+<script>
+    var addressList=[34,"chennai",983434343,true];
+    //read operation
+    console.log(addressList);
+    //update operation 
+    addressList[3] = false;
+    console.log(addressList);
+    //add operation
+    //will add value at the end position
+    addressList.push(88,77);
+    console.log(addressList);
+    //delete operation 
+    //it will remove value at the end position 
+    addressList.pop();
+    addressList.pop();
+    console.log(addressList.length);
+</script>

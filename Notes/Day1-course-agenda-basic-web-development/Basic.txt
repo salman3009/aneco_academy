@@ -1,0 +1,32 @@
+1.WWW - world wide web
+2.Web browser 
+3.HTML - hyper text markup language 
+4.http - hyper text transfer protocol
+http 
+    ->request 
+    ->response
+5.server and end user.
+server - someone is going to provide you the service.
+6.web server 
+   1.web client 
+   2.web server 
+   3.database 
+if you want to develop website:
+1.html 
+2.css 
+3.javascript
+Library or framework:
+reactjs
+==============
+html
+hyper - one information is connected with another information.
+text - information 
+markup - <>
+language 
+==========================
+html-5
+=========================
+M - mongodb framework database 
+Nodejs and Expressjs - backend 
+Reactjs/Emberjs/angular/vuejs - frontend 
+===================================

@@ -1,0 +1,48 @@
+{
+  "registration": [
+    {
+      "id": 1,
+      "firstName": "akash",
+      "email": "akash@gmail.com",
+      "password": "12345"
+    },
+    {
+      "firstName": "suresh",
+      "email": "suresh@gmail.com",
+      "password": "12345",
+      "id": 2
+    },
+    {
+      "firstName": "senthil",
+      "email": "senthil@gmail.com",
+      "password": "12345",
+      "id": 3
+    }
+  ],
+  "book": [
+    {
+      "bookName": "collections",
+      "price": "89999",
+      "available": false,
+      "email": "suresh@gmail.com",
+      "id": 2
+    }
+  ],
+  "expense": [
+    {
+      "amount": 200,
+      "type": "ADD",
+      "id": 1
+    },
+    {
+      "amount": 200,
+      "type": "ADD",
+      "id": 2
+    },
+    {
+      "amount": 300,
+      "type": "REMOVE",
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+	"variables": [],
+	"info": {
+		"name": "AnecoApi",
+		"_postman_id": "1329cc0c-8efb-2810-fec7-efc89f9c1852",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"url": {
+					"raw": "http://localhost:3000/registration?email=suresh@gmail.com&password=12345",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"registration"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "suresh@gmail.com",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"firstName\": \"suresh\",\n        \"email\": \"suresh@gmail.com\",\n        \"password\": \"12345\"\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"url": "http://localhost:3000/registration",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"firstName\": \"suresh\",\n        \"email\": \"suresh@gmail.com\",\n        \"password\": \"12345\"\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "BookGet",
+			"request": {
+				"url": {
+					"raw": "http://localhost:3000/book?email=suresh@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"book"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "suresh@gmail.com",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"firstName\": \"suresh\",\n        \"email\": \"suresh@gmail.com\",\n        \"password\": \"12345\"\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "BookPost",
+			"request": {
+				"url": "http://localhost:3000/book",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n        \"bookName\": \"potter\",\n        \"price\": 5000,\n        \"available\": false,\n        \"email\": \"suresh@gmail.com\"\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "BookDelete",
+			"request": {
+				"url": "http://localhost:3000/book/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"firstName\": \"suresh\",\n        \"email\": \"suresh@gmail.com\",\n        \"password\": \"12345\"\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "BookPut",
+			"request": {
+				"url": "http://localhost:3000/book/2",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n        \"bookName\": \"potter\",\n        \"price\": 6000,\n        \"available\": false,\n        \"email\": \"suresh@gmail.com\"\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

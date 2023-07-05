@@ -1,0 +1,19 @@
+<script>
+    //async code
+    const getDetails=()=>{
+         return new Promise((success,failure)=>{
+            success([56,77,77]);
+         })
+    }
+    getDetails().then((result)=>{
+         console.log(result);
+    })
+    let list="data";
+     console.log(list);
+     function addition(a,b){
+        console.log("inside the function");
+        return a+b;
+     }
+     console.log("outside the function");
+     addition(44,55);
+</script>
