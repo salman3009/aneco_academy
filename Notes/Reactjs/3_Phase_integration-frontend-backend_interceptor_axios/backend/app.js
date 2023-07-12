@@ -4,11 +4,13 @@ const userRoute = require('./routes/user');
 const productRoute = require('./routes/product');
 const mongoose = require('mongoose');
 const cors = require('cors');
-
-mongoose.connect('mongodb://127.0.0.1:27017/aneco_academy').then(()=>{
+const uri = "mongodb+srv://aneco:1BYlTq0Og7xapFNU@milesweb.xqz5h.mongodb.net/aneco_academy"
+//const uri = "mongodb://127.0.0.1:27017/aneco_academy";
+mongoose.connect(uri).then(()=>{
     console.log("connected");
-}).catch(()=>{
+}).catch((err)=>{
     console.log("connection failed");
+    console.log(err);
 })
 
 app.use(express.json());

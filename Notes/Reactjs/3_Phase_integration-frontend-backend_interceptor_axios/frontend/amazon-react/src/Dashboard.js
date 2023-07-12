@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
+import Modal from "./Helpers/Modal";
 
 const Dashboard = () => {
 
   const navigate = useNavigate();
+  const[getModal,setModal] = useState(false);
   const [getState, setState] = useState({
     productName: '',
     price: ''
@@ -16,6 +18,14 @@ const Dashboard = () => {
 
   const onChangeHandler = (event) => {
     setState({ ...getState, [event.target.name]: event.target.value })
+  }
+
+  const onClose = () => {
+    setModal(false);
+    setState({
+      productName:'',
+      price:''
+     })
   }
 
   const onSubmitDetails = (event) => {
@@ -56,6 +66,10 @@ const Dashboard = () => {
            console.log(result.data);
            if(result.data && result.data.post){
              setList(result.data.post);
+             setState({
+              productName:'',
+              price:''
+             })
              setRoles(sessionStorage.getItem('roles'));
            }
       }).catch((err)=>{
@@ -87,18 +101,22 @@ const Dashboard = () => {
         productName:getList[index].productName,
         price:getList[index].price
        })
+       setModal(true);
   }
 
-  const onUpdateSubmitDetails=()=>{
+  const onUpdateSubmitDetails=(event)=>{
+    event.preventDefault();
     axios.patch(`http://localhost:8080/api/product/list/${getList[getIndex]._id}`,{...getState}).then((result)=>{
       getListDetails();
+      setModal(false);
  }).catch((err)=>{
    if (err.response && err.response.data && err.response.data.message) {
      setError(err.response.data.message);
    }
    else {
-     setError("internal server error, try after sometime")
+     setError("internal server error, try after sometime");
    }
+   setModal(false);
  })
   }
 
@@ -163,31 +181,15 @@ const Dashboard = () => {
       </div>
     </div>
 
-    <div class="modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Product Update</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      <form>
-          <div class="form-group">
-            <label htmlFor="productName">Product Name</label>
-            <input type="text" className="form-control" value={getState.productName} onChange={onChangeHandler} id="productName" name="productName" />
-          </div>
-          <div class="form-group">
-            <label htmlFor="price">Price</label>
-            <input type="number" className="form-control" value={getState.price} onChange={onChangeHandler} id="price" name="price" />
-          </div>
-          <button onClick={onUpdateSubmitDetails} type="submit" className="btn btn-primary">Update</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
+    {getModal && <Modal 
+     productName={getState.productName}
+     price={getState.price} 
+     onClose={onClose}
+     onChangeHandler={onChangeHandler}
+     onUpdateSubmitDetails={onUpdateSubmitDetails}
+     />}
+
+ 
   </div>)
 }
 export default Dashboard;
