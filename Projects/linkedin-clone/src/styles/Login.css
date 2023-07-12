@@ -1,0 +1,107 @@
+:root {
+  --fs-h1: 1.5rem;
+  --fs-h2: 1.25rem;
+  --fs-body: 0.8rem;
+}
+
+.container {
+  font-family: "Roboto", sans-serif;
+  width: 320px;
+  /* height: 490px; */
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  color: #0a66c3;
+}
+
+.logo i {
+  padding-left: 0.1rem;
+}
+
+.intro {
+  box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.intro--title {
+  font-size: var(--fs-h1);
+}
+
+.intro--text {
+  font-size: var(--fs-body);
+  color: rgba(0, 0, 0, 0.9);
+  margin-top: 0.3em;
+}
+
+.input {
+  position: relative;
+  margin: 1em auto 0.5em;
+}
+
+.input input {
+  width: 100%;
+  height: 50px;
+  padding-top: 1em;
+  border-radius: 4px !important;
+  line-height: 1.333;
+}
+
+.input label {
+  position: absolute;
+  top: 10%;
+  left: 10px;
+  /* font-size: 1.1rem; */
+  color: #8c8c8c;
+  transition: 200ms;
+}
+
+.input input:focus ~ label,
+.input input:valid ~ label {
+  top: 10%;
+  font-size: 0.8rem;
+  color: #000;
+}
+
+.input input:focus {
+  border-width: 2px;
+  border-color: #0a66c3;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  height: 35px;
+  margin-top: 1em;
+  background-color: #0a66c3;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+}
+
+.footer {
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer a {
+  padding-top: 0.3em;
+  margin-left: 0.2em;
+}
+
+.links {
+  color: #0073b1;
+  text-decoration: none;
+  font-size: var(--fs-body);
+  cursor: pointer;
+}

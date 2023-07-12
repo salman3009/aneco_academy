@@ -1,4 +1,0 @@
-display property:
-1.block - width and height will work but it will go in next line
-2.inline - width and height will not work
-3.inline-block - width and height and will continue in same line.

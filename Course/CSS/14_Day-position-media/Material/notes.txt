@@ -1,0 +1,25 @@
+Position:
+1.static: normal flow of the page
+2.relative :normal flow of the page but you can use position left,right,top,bottom to move around the page.
+3.absolute :It will start from parent position.
+//use relative + absolute to arrange image with text
+4.sticky - it will fix in particular position
+//use sticky for navbar
+
+Media Query:
+1.To make mobile responsive
+2.Following responsive we need to write:
+        /* phone and mobile */ max-width:480px
+        /*low resolution tablet and ipad*/ (min-width:481px) and (max-width:767px)
+        /*portrait mode tablet and ipad*/ (min-width:768px) and (max-width:1024px)
+        /*laptop*/ (min-width:1025px) and (max-width:1280px)
+        /*large screen*/ (min-width:1281px)
+example:
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+ @media (max-width:480px){
+               
+}
+=======================================
+

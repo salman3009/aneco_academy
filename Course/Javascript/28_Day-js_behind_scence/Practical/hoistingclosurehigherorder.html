@@ -1,0 +1,22 @@
+<script>
+    //hoisting
+    console.log(fullName);
+    var fullName = "akash";
+    display();
+    function display(){
+        console.log("Details display");
+    }
+</script>
+
+
+<script>
+    //closure child function can able access the variable of parent function
+   function displayName(){
+       let address = "chennai";
+       return function(){
+           console.log(address);//closure
+       }
+   }
+   displayName()();
+   //function is returning another function is called higher order function
+</script>

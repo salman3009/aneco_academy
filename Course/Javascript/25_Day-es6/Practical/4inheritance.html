@@ -1,0 +1,35 @@
+<script>
+    class YouTube{
+
+        constructor(name,likes,subscribe){
+            this.name = name;
+            this.likes = likes;
+            this.subscribe = subscribe;
+        }
+
+        setSubscribe(input){
+           this.subscribe = input;
+           this.address = "chennai";
+        }
+
+        getAddress(){
+            return this.address;
+        }
+    }
+   
+   class SubscribeChannels extends YouTube{
+            constructor(name,like,subscribe,age,amount){
+                 super(name,like,subscribe);
+                 this.age = age;
+                 this.amount = amount;
+            }
+            getAmount(){
+                return this.amount;
+            }
+   }
+
+   var sureshChannels = new SubscribeChannels("suresh",33,true,33,1000);
+   console.log(sureshChannels);
+   sureshChannels.setSubscribe(true);
+   console.log(sureshChannels.getAddress());
+</script>

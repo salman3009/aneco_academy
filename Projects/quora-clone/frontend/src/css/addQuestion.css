@@ -1,0 +1,44 @@
+.add-question{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(228, 223, 223);
+}
+
+.add-question-body{
+    width: 100%;
+    padding: 20px 250px;
+    display: flex;
+    flex-direction:column;
+    align-items: flex-end;
+}
+
+.question-box{
+    width: 900px;
+    background-color: white;
+    font-size: 35px;
+    padding: 10px;
+    font-weight: bold;
+    color: rgb(177, 177, 177);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px rgb(201, 200, 200);
+}
+
+.question-box input{
+    width: 700px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+.question-buttons button{
+    background-color: brown;
+    color: white;
+    padding: 7px 12px;
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
