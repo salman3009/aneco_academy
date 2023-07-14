@@ -1,38 +1,14 @@
 <script>
-/*1.check number is integer*/
-const check=(a)=> a%1===0;
-console.log(check(2));
-
 /*2.anonymous function*/
-(()=>{
-var a=b=5;
-})();
-console.log(b);
+
 /*3.two function call with closure*/
-function multiply(a){
-    return function c(b)
-    {
-        return a*b;
-    }
-}
-console.log(multiply(4)(4));
+
 
 /*4.bind function*/
-function full()
-{
-    return "The value is"+this.firstname+"The last name is"+this.lastname;
-}
-const person={firstname:"salman",lastname:"ahmed"};
-console.log(full.bind(person)());
 
-/*5 strict function*/
-function call()
-{
-    // "use strict";
-    x="salman";
-    console.log(x);
-}
-call();
+
+
+
 /*6 == and ===*/
 console.log([]==false);
 console.log([]===false);
