@@ -175,7 +175,7 @@ function displayName(input){
         return input;
     }
 
-    return lastName;
+    return lastName();
 
 }
 
@@ -193,7 +193,7 @@ console.log(data());
 //         return input;
 //     }
 
-//     return lastName;
+//     return lastName();
 
 // }
 
