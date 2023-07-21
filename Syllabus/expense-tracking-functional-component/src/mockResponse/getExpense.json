@@ -1,0 +1,39 @@
+[
+    {
+      "expenseName": "home purchase",
+      "notes": "from hdfc bank",
+      "category": 2,
+      "amount": 70000,
+      "paidBy": "Salman",
+      "date": "29/03/2022",
+      "id": 3
+    },
+    {
+      "expenseName": "home purchase",
+      "amount": 70000,
+      "paidBy": "Salman",
+      "date": "29/03/2022",
+      "id": 4
+    },
+    {
+      "expenseName": "salman",
+      "date": "2022-05-12",
+      "paidBy": "salman",
+      "amount": "2000",
+      "id": 5
+    },
+    {
+      "expenseName": "rajesh",
+      "date": "2022-05-22",
+      "paidBy": "rajesh",
+      "amount": "2000",
+      "id": 6
+    },
+    {
+      "expenseName": "imran",
+      "date": "2022-05-03",
+      "paidBy": "imran",
+      "amount": "2000",
+      "id": 7
+    }
+  ]

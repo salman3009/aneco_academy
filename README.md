@@ -1,1 +1,0 @@
-# aneco_academy
