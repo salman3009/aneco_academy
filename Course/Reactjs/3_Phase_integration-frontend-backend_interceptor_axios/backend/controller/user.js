@@ -31,10 +31,13 @@ const loginUser = async (req,res)=>{
         }
         const token = jwt.sign({roles:emailResult.roles},'secret_this_should_be_longer',{expiresIn:"1h"});
         
+        let result = emailResult.roles.includes('admin');
+
          res.status(200).json({
             message:"successful",
             token:token,
-            email:emailResult.email
+            email:emailResult.email,
+            roles:result?'admin':'employee'
          })
     }catch(err){
         res.status(500).json({
