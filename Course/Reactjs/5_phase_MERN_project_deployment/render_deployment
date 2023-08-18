@@ -34,3 +34,11 @@ https://github.com/salman3009/aneco_frontend_deployment
 frontend deployment:
 https://aneco-frontend-deployment.onrender.com
 ==============================================
+Deploying only index.html:
+
+If your index.html is in the root of your GitHub Repo, the settings would be:
+Build Command: leave blank
+Publish Directory: .
+If you want to stop any attempts to detect dependencies, 
+you can also add an environment variable of SKIP_INSTALL_DEPS with a value of true
+===============================================
