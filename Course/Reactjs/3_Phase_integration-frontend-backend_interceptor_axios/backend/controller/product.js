@@ -19,7 +19,8 @@ const createProduct= async(req,res)=>{
 const getListProduct=async(req,res)=>{
     try{
         let query={}
-        if(req.roles === 'employee'){
+        console.log(req.roles);
+        if(!req.roles.includes('admin')){
           query.email = req.body.email;
         }
         let result = await Product.find(query);
@@ -37,7 +38,7 @@ const getListProduct=async(req,res)=>{
 
 const deleteListProduct=async(req,res)=>{
     try{
-        if(req.roles.includes('employee') ){
+        if(!req.roles.includes('admin') ){
            return res.status(404).json({
                 message:'Unauthorized transaction.Employee cannot delete the data'
             })
